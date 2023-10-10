@@ -14,13 +14,20 @@ body {
   font-family: arial;
 }
 
+.container {
+  overflow: auto;
+  max-height: 100vh;
+}
+
 .switch-flex {
   border: 1px solid #d3d3d3;
   border-radius: 100px;
   position: relative;
   display: flex;
   padding: 4px;
+  justify-content: space-between
 }
+
 
 .switch {
   z-index: 2;
@@ -42,21 +49,18 @@ body {
   border-radius: 100px;
   background: #ffffff;
   transition:  all .2s ease-in-out;
-  
-  
 }
 
 .switch-hover-green {
   z-index: 1;
-  position: absolute;
+  position:absolute;
   top: 4px;
   left: 4px;
   height: calc(100% - 8px);
   border-radius: 100px;
   background: #00df00;
   transition:  all .2s ease-in-out;
-  
-  
+
 }
 
 .active {
@@ -69,7 +73,8 @@ body {
   border-radius: 100px;
   padding: 14px;
   padding-inline: 150px;
-  background-color: rgb(244, 130, 23);
+  background-color: rgb(255, 180, 109);
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
